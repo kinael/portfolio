@@ -108,7 +108,7 @@ h2:hover::after {
 }
 
 .project {
-    background-color: #ADD8E6;
+    background-color: #fff;
     margin: 2rem 0;
     padding: 2rem;
     border-radius: 10px;
@@ -166,7 +166,7 @@ h2:hover::after {
     transition: color 0.3s, transform 0.3s;
 }
 
-contact-info a:hover {
+.contact-info a:hover {
     color: #004494;
     transform: scale(1.1);
 }
@@ -241,9 +241,35 @@ footer {
     cursor: pointer;
 }
 
-#projects .content {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .intro, .content {
+        padding: 2rem;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .intro p, .contact-info, h2, .project p, .project button {
+        font-size: 1rem;
+    }
+
+    .project img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .project {
+        padding: 1rem;
+    }
 }
