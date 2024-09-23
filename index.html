@@ -1,63 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorenzo Wrublewski - Portfólio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#home">Lorenzo Wrublewski</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <section id="home">
-        <div class="intro">
-            <h1 class="animated-text">Bem-vindo(a)!</h1>
-            <p>Sou Lorenzo Wrublewski, desenvolvedor de jogos e softwares corporativos.</p>
+
+    <section id="home" class="text-center bg-primary text-white py-5">
+        <div class="container">
+            <h1 class="display-4">Bem-vindo(a)!</h1>
+            <p class="lead">Sou Lorenzo Wrublewski, desenvolvedor de jogos e softwares corporativos.</p>
         </div>
     </section>
-    <section id="about">
-        <div class="content">
-            <h2>Sobre Mim</h2>
-            <p>Olá! <br>Me chamo Lorenzo, atuo autonomamente no desenvolvimento de jogos virtuais e softwares corporativos. Possuo experiência na área de tecnologia, com proficiência em Java, Delphi e Web (HTML, CSS, Js). Crio projetos e sistemas pensados exclusivamente para cada caso solicitado. </p>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Sobre Mim</h2>
+            <p class="text-center">Olá! Meu nome é Lorenzo e atuo no desenvolvimento de jogos virtuais e softwares
+                corporativos. Tenho experiência em tecnologia, com proficiência em Java, Delphi e Web (HTML, CSS, JS).
+                Crio projetos personalizados para atender às necessidades de cada cliente.</p>
         </div>
     </section>
-<section id="projects">
-    <div class="content">
-        <h2>Projetos</h2>
-        <div class="project">
-            <h3>Midnight Zombies</h3>
-            <img src="https://i.imgur.com/g1XTehA.jpeg" alt="Midnight Zombies" class="project-image">
-            <button class="enlarge-btn">Ampliar</button>
-            <p>Meu primeiro projeto de jogo 2D com desenvolvimento em Java.</p>
-            <p>Link de acesso: <a href="https://encurtador.com.br/WKc0g" target="_blank">https://encurtador.com.br/WKc0g</a></p>
-        </div>
-        <div class="project">
-            <h3>Cálculo de Desconto para Clientes Suframa</h3>
-            <img src="https://i.imgur.com/NGUP2Zw.png" alt="Cálculo de Desconto para Clientes SUFRAMA" class="project-image">
-            <button class="enlarge-btn">Ampliar</button>
-            <p>Software corporativo desenvolvido com objetivo de facilitar o cálculo de desconto para clientes da ZFM que possuem desconto Suframa. </p>
-            <p>Link de acesso: <a href="https://encurtador.com.br/RBDJ3" target="_blank">https://encurtador.com.br/RBDJ3</a></p>
-        </div>
-        <div class="project">
-            <h3>Cálculo de Porcentagem para Entrada de Importação</h3>
-            <img src="https://i.imgur.com/4NE0JDn.png" alt="Cálculo de Porcentagem para Diferentes Fornecedores em Entrada de Importação" class="project-image">
-            <button class="enlarge-btn">Ampliar</button>
-            <p>Software corporativo desenvolvido com objetivo de facilitar a distribuição de porcentagem e impostos para diferentes fornecedores em uma entrada de importação. </p>
-            <p>Link de acesso: <a href="https://encurtador.com.br/8Yxph" target="_blank">https://encurtador.com.br/8Yxph</a></p>
+
+    <section id="projects" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Projetos</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+                    <div class="card flex-fill">
+                        <img src="https://i.imgur.com/g1XTehA.jpeg" alt="Midnight Zombies" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Midnight Zombies</h3>
+                            <p class="card-text">Meu primeiro projeto de jogo 2D com desenvolvimento em Java.</p>
+                            <a href="https://encurtador.com.br/WKc0g" target="_blank"
+                                class="btn btn-primary">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+                    <div class="card flex-fill">
+                        <img src="https://i.imgur.com/NGUP2Zw.png" alt="Cálculo de Desconto" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Cálculo de Desconto para Clientes Suframa</h3>
+                            <p class="card-text">Software corporativo desenvolvido para facilitar cálculos de desconto.
+                            </p>
+                            <a href="https://encurtador.com.br/RBDJ3" target="_blank"
+                                class="btn btn-primary">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+                    <div class="card flex-fill">
+                        <img src="https://i.imgur.com/4NE0JDn.png" alt="Cálculo de Porcentagem"
+                            class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Cálculo de Porcentagem para Entrada de Importação</h3>
+                            <p class="card-text">Facilita a distribuição de porcentagens e impostos para fornecedores.</p>
+                            <a href="https://encurtador.com.br/8Yxph" target="_blank"
+                                class="btn btn-primary">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section id="contact">
-        <div class="content">
-            <h2>Contato</h2>
-            <div class="contact-info">
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contato</h2>
+            <div class="text-center">
                 <p>Instagram: <a href="https://www.instagram.com/lowrub" target="_blank">@lowrub</a></p>
                 <p>E-mail: <a href="mailto:lorenzowrublewski08@gmail.com">lorenzowrublewski08@gmail.com</a></p>
                 <p>LinkedIn: <a href="https://www.linkedin.com/in/lorenzo-wrublewski" target="_blank">/lorenzo-wrublewski</a></p>
@@ -66,15 +107,14 @@
             </div>
         </div>
     </section>
-    <footer>
+
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 - Lorenzo Wrublewski</p>
     </footer>
 
-    <div id="lightbox" class="lightbox">
-        <span class="close">&times;</span>
-        <img class="lightbox-content" id="lightbox-img">
-    </div>
-    
-    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
